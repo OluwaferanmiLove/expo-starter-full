@@ -1,0 +1,70 @@
+const colors = {
+  white: '#FFFFFF',
+  primary: {
+    extraLight: '#C6C0FE',
+    light: '#7E76DD',
+    main: '#332089',
+    pastel: '#F7F5FF',
+    whiteTransparent: '#EBE9F3',
+  },
+  accentRed: {
+    extraLight: '#FEB8DD',
+    light: '#EA5E8B',
+    main: '#BF0637',
+    pastel: '#FFEBF5',
+    pastel2: '#F3D0D9',
+    transparent: '#F4E2E6',
+    whiteTransparent: '#F9E6EB',
+  },
+  accentDarkRed: {
+    main: '#55001F',
+    pastel: '#EEE5E9',
+  },
+  accentYellow: {
+    extraLight: '#FFE1BB',
+    light: '#FFC476',
+    main: '#EF940F',
+    pastel: '#FEF6EB',
+    whiteTransparent: '#FDF4E7',
+  },
+  accentGreen: {
+    extraLight: '#CAFFE9',
+    light: '#73E8BB',
+    main: '#39B588',
+    pastel: '#EBFFF7',
+    pastel2: '#EFFAF6',
+    pastel3: '#F5FFFB',
+    transparent: '#E7F3EF',
+    whiteTransparent: '#EBF8F3',
+  },
+  accentOrange: {
+    extraLight: '#FFC8B3',
+    light: '#FF8159',
+    main: '#F35508',
+    pastel: '#FFF0EB',
+    whiteTransparent: '#FFF5F0',
+  },
+  black: {
+    main: '#292D32',
+    secondary: '#3E3E3E',
+    muted: '#656565',
+    placeholder: '#747478',
+    transparent: '#292D321A',
+  },
+  grey: {
+    bgOne: '#F8F8F8',
+    bgTwo: '#FAFAFA',
+    border: '#E5E5E580',
+    borderTwo: '#D8D8D8',
+    muted: '#AAAAAA',
+    mutedLight: '#C2C2C2',
+    mutedDark: '#656565',
+    extraLight: '#F0F0F0',
+  },
+  notifications: {
+    error: '#FFF0F8',
+    success: '#E2FFF3',
+  },
+};
+
+export default colors;

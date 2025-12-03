@@ -12,7 +12,9 @@
       "tsconfigPaths": true
     },
 
-    "plugins": [],
+    "plugins": [
+      "expo-notifications"
+    ],
 
     "orientation": "portrait",
     "icon": "./assets/icon.png",
