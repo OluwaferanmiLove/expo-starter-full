@@ -1,6 +1,7 @@
 {
-  "name": "gemma",
+  "name": "expo-starter-full",
   "version": "1.0.0",
+   "description": "My custom React Native Expo starter template with push notifications, nativewind, and more.",
   "scripts": {
     "android": "expo start --android",
     "ios": "expo start --ios",

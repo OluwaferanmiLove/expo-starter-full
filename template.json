@@ -1,0 +1,6 @@
+{
+  "name": "expo-starter-full",
+  "displayName": "Expo Starter Full",
+  "description": "My custom React Native Expo starter template with push notifications, nativewind, and more.",
+  "version": "1.0.0"
+}
