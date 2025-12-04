@@ -4,9 +4,7 @@ import { TabView, SceneMap, TabViewProps } from 'react-native-tab-view';
 // import { Body, P } from 'app/design/typography';
 import { ScrollView } from 'react-native-gesture-handler';
 import { SelectionPill } from '../buttons';
-import { styled } from 'nativewind';
-import { BaseText } from '../base';
-import { wp } from 'src/assets/utils/js';
+import { wp } from '@/utils';
 // import { hapticFeedback } from 'app/utils/index';
 
 const SCREEN_WIDTH = Dimensions.get('screen').width;

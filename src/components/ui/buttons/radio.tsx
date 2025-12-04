@@ -1,8 +1,8 @@
-import colors from '@/theme/colors';
 import * as Animatable from 'react-native-animatable';
 import Pressable from '../base/pressable';
 import { wp } from '@/utils';
 import { TickCircle } from 'iconsax-react-native';
+import { colors } from '@/theme/colors';
 
 interface RadioProps {
   active: boolean;

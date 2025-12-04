@@ -1,16 +1,14 @@
-import React from 'react';
+import React, { ReactNode, useEffect, useRef, useState } from 'react';
 import {
   Dimensions,
   GestureResponderEvent,
   LayoutChangeEvent,
   StyleSheet,
+  View,
   TouchableOpacity,
   TouchableWithoutFeedback,
 } from 'react-native';
-import colors from '@/theme/colors';
 import Pressable from './base/pressable';
-import { ReactNode, useEffect, useRef, useState } from 'react';
-import { View } from 'react-native';
 import Row from './row';
 import CircledIcon from './circled-icon';
 import { BaseModal, BaseText } from './base';
@@ -19,6 +17,7 @@ import Separator from './others/separator';
 import * as Haptics from 'expo-haptics';
 import { Menu } from 'iconsax-react-native';
 import { wp } from '@/utils';
+import { colors } from '@/theme/colors';
 
 export interface MoreOptionsProps {
   options: MoreOptionElementProps[];
@@ -32,10 +31,6 @@ export interface MoreOptionElementProps {
   icon?: ReactNode;
   onPress: VoidFunction;
 }
-
-const { width } = Dimensions.get('window');
-//determine card width by subtracting the page padding and gap from widow width
-const cardWidth = (width - 40 - 20) / 2;
 
 const MoreOptions = ({ options, customMenuElement, classes }: MoreOptionsProps) => {
   const [visible, setVisible] = useState(false);

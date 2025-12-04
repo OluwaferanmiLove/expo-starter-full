@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { View } from 'react-native';
-import colors from '@/theme/colors';
 import { TickSquare } from 'iconsax-react-native';
+import { colors } from '@/theme/colors';
 
 interface CheckBoxProps {
   checked: boolean;

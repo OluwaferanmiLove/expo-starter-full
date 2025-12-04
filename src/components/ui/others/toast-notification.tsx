@@ -1,13 +1,12 @@
 import { ReactNode } from 'react';
 import { BaseText } from '../base';
-import CircledIcon from '../circled-icon';
-import Row, { RowProps } from '../row';
-import { CloseCircle, InfoCircle, TickCircle } from 'iconsax-react-native/src';
-import { wp } from '@/assets/utils/js';
-import colors from '@/theme/colors';
+import Row from '../row';
+import { CloseCircle, InfoCircle, TickCircle } from 'iconsax-react-native';
 import { ActivityIndicator, View } from 'react-native';
-import Toast, { BaseToast, ToastConfig, ToastConfigParams } from 'react-native-toast-message';
+import Toast, { ToastConfig } from 'react-native-toast-message';
 import Pressable from '../base/pressable';
+import { wp } from '@/utils';
+import { colors } from '@/theme/colors';
 
 interface ToastNotificationProps {
   icon?: ReactNode;

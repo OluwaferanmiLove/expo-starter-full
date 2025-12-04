@@ -1,5 +1,5 @@
 import React from 'react';
-import { ViewProps, View } from 'react-native';
+import { ViewProps } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 interface HideComponentProps {

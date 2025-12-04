@@ -50,7 +50,6 @@ const Button = ({
   isLoading,
   variant = ButtonVariant.PRIMARY,
   size = ButtonSize.LARGE,
-  // textColor = TextColor.WHITE,
   textColor,
   loadingText,
   btnStyle,
@@ -115,7 +114,7 @@ const Button = ({
 const btnBaseStyle = 'items-center justify-center';
 
 const variantStyle = {
-  [ButtonVariant.PRIMARY]: { classes: 'w-full bg-primary-main' },
+  [ButtonVariant.PRIMARY]: { classes: 'w-full bg-primary-light' },
   [ButtonVariant.SUCCESS]: { classes: 'w-full bg-accentGreen-main text-white' },
   [ButtonVariant.LIGHT]: { classes: 'w-full bg-grey-bgOne' },
   [ButtonVariant.WHITE]: { classes: 'w-full bg-white' },

@@ -1,14 +1,13 @@
-import React, { ReactNode, useCallback, useEffect, useMemo, useState } from 'react';
-import { Dimensions, PixelRatio, Text, TextProps } from 'react-native';
-import { hp, wp } from '@/assets/utils/js/responsive-dimension';
+import React, { ReactNode, useMemo } from 'react';
+import { PixelRatio, Text, TextProps } from 'react-native';
 import cx from 'classnames';
-import { styled } from 'nativewind';
-import { deviceType } from 'src/assets/utils/js';
-import * as Device from 'expo-device';
+import { wp } from '@/utils';
 
 export type BaseTextProps<
   TType = 'heading' | 'body',
-  T = TType extends 'body' ? 'bold' | 'light' | 'regular' | 'medium' | 'semiBold' | 'bold' | 'black' : 'bold' | 'light',
+  T = TType extends 'body'
+    ? 'bold' | 'light' | 'regular' | 'medium' | 'semiBold' | 'bold' | 'black'
+    : 'bold' | 'light',
 > = {
   fontSize?: number;
   lineHeight?: number;
@@ -19,8 +18,6 @@ export type BaseTextProps<
   textTransform?: 'uppercase' | 'lowercase' | 'capitalize';
   style?: { [key: string]: any };
 } & Omit<TextProps, 'style'>;
-
-const { width } = Dimensions.get('window');
 
 const fontScale = PixelRatio.getFontScale();
 
@@ -51,6 +48,9 @@ const BaseText = ({
   }, [fontSize]);
 
   const lineHeightSizing = useMemo(() => {
+    if (!lineHeight) {
+      return undefined;
+    }
     const responsiveFs = wp(lineHeight);
     if (fontScale < 1) {
       return Math.max(responsiveFs * 0.9, responsiveFs * fontScale);

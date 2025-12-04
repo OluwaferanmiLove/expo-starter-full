@@ -1,9 +1,9 @@
-const colors = {
+export const colors = {
   white: '#FFFFFF',
   primary: {
     extraLight: '#C6C0FE',
-    light: '#7E76DD',
-    main: '#332089',
+    light: '#6300AF',
+    main: '#0D0017',
     pastel: '#F7F5FF',
     whiteTransparent: '#EBE9F3',
   },
@@ -66,5 +66,3 @@ const colors = {
     success: '#E2FFF3',
   },
 };
-
-export default colors;

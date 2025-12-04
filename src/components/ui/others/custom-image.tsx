@@ -1,9 +1,8 @@
-import { styled } from 'nativewind';
 import { ActivityIndicator, View, ViewProps } from 'react-native';
 import { Image, ImageProps } from 'expo-image';
 import classNames from 'classnames';
-import colors from 'src/theme/colors';
 import { useState } from 'react';
+import { colors } from '@/theme/colors';
 
 interface CustomImageProps extends Partial<ViewProps> {
   imageProps: ImageProps;
@@ -40,7 +39,7 @@ const CustomImage = ({
           setIsError(false);
         }}
         {...imageProps}
-        source={imageProps.source ?? imageProps.source.uri ?? fallBackImage}
+        source={imageProps.source ?? fallBackImage}
       />
       {loading && showLoader && (
         <View className="absolute h-full w-full items-center justify-center">

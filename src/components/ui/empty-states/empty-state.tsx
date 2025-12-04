@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
 import { View } from 'react-native';
 import { BaseText } from '@/components/ui';
-import Row from '@/components/ui/row';
 import Button, { ButtonSize } from '../buttons/button';
 import classNames from 'classnames';
 import { cx } from '@/utils';

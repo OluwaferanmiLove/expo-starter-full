@@ -16,10 +16,8 @@ import React, {
   useRef,
   forwardRef,
   ForwardRefRenderFunction,
-  ForwardedRef,
-  useEffect,
 } from 'react';
-import { BackHandler, Platform, StyleSheet, ViewProps, ViewStyle } from 'react-native';
+import { Platform, StyleSheet, ViewProps, ViewStyle } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Toast from 'react-native-toast-message';
 
@@ -29,12 +27,11 @@ import FixedBtnFooter from '../buttons/fixed-btn-footer';
 import { toastConfig } from '../others/toast-notification';
 import Row from '../row';
 
-import { heightPercentageToDP, wp } from '@/assets/utils/js';
-import colors from '@/theme/colors';
-import { FullWindowOverlay } from 'react-native-screens';
-import useKeyboard from 'src/hooks/use-keyboard';
 import { useBottomSheetBackHandler } from 'src/hooks/use-bottom-back';
 import { BackdropPressBehavior } from '@gorhom/bottom-sheet/lib/typescript/components/bottomSheetBackdrop/types';
+import { heightPercentageToDP, wp } from '@/utils';
+import useKeyboard from '@/hooks/use-keyboard';
+import { colors } from '@/theme/colors';
 
 export interface BottomModalProps {
   headerAddon?: ReactNode;
@@ -233,7 +230,7 @@ const BottomModalComponent: ForwardRefRenderFunction<BottomModalMethods, BottomM
       stackBehavior="push"
       maxDynamicContentSize={heightPercentageToDP(90)}
       backdropComponent={renderBackdrop}
-      footerComponent={(!isKeyboardActive || showFooterOnKeyboard) && renderFooter}
+      footerComponent={(!isKeyboardActive || showFooterOnKeyboard) ? renderFooter : undefined}
       handleIndicatorStyle={styles.indicator}
       style={[modalStyle]}
       backgroundStyle={{ borderTopLeftRadius: wp(20), borderTopRightRadius: wp(20) }}

@@ -1,12 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Animated, ScrollView, Text, View, FlatList, ImageBackground, Dimensions } from 'react-native';
-import colors from '@/theme/colors';
-import Row from './row';
-import { BaseText } from './base';
-import cx from 'classnames';
+import { Animated,View, FlatList } from 'react-native';
 import { hp, wp } from '@/utils';
+import { colors } from '@/theme/colors';
 
-const screenWidth = Dimensions.get('window').width;
 const width = wp(305);
 
 export interface BalanceCardItem {

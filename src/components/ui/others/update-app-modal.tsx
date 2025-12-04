@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Linking, Platform } from 'react-native';
-import { ArrowUp } from 'iconsax-react-native/src';
+import { ArrowUp } from 'iconsax-react-native';
 import * as Animatable from 'react-native-animatable';
 
 import BottomModal, { BottomModalProps } from '../modals/bottom-modal';
 import { BaseText, CircledIcon } from '../index';
 import { ButtonVariant } from '../buttons/button';
-import { wp } from '@/assets/utils/js';
-import colors from '@/theme/colors';
+import { colors } from '@/theme/colors';
+import { wp } from '@/utils';
 
 interface UpdateAppModalProps extends Partial<BottomModalProps> {
   closeModal: () => void;

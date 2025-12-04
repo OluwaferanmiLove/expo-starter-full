@@ -1,5 +1,3 @@
-import { styled } from 'nativewind';
-import { TouchableWithoutFeedback } from 'node_modules/@gorhom/bottom-sheet/lib/typescript';
 import React, { ReactNode } from 'react';
 import { TouchableOpacity, TouchableOpacityProps } from 'react-native';
 
@@ -21,4 +19,4 @@ const Pressable = ({ children, trackingText, ...rest }: PressableProps) => {
   );
 };
 
-export default styled(Pressable);
+export default Pressable;

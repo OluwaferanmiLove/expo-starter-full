@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react';
-import colors from '@/theme/colors';
 import Pressable, { PressableProps } from '../base/pressable';
 import CircledIcon from '../circled-icon';
 import { Add } from 'iconsax-react-native';
 import Animated, { interpolate, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { wp } from '@/utils';
+import { colors } from '@/theme/colors';
 
 interface FABProps extends PressableProps {
   disabled?: boolean;

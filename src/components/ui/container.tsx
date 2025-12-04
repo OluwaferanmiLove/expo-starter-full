@@ -1,6 +1,6 @@
 import { cx } from '@/utils/function';
 import { ReactNode } from 'react';
-import { Text, View, ViewProps } from 'react-native';
+import { View, ViewProps } from 'react-native';
 
 interface ContainerProps extends Partial<ViewProps> {
   children?: ReactNode;

@@ -1,8 +1,6 @@
 import React, { ReactNode } from 'react';
 import { View, ViewProps } from 'react-native';
 import { BaseText } from '@/components/ui';
-import Row from '@/components/ui/row';
-import Button from '../buttons/button';
 
 export interface SectionEmptyStateProps extends Partial<ViewProps> {
   text?: string;

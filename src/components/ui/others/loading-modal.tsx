@@ -1,6 +1,6 @@
+import { colors } from '@/theme/colors';
 import React from 'react';
 import {ActivityIndicator, Dimensions, View} from 'react-native';
-import colors from 'src/theme/colors';
 
 interface PropsType {
   isVisible: boolean;

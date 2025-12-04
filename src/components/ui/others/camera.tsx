@@ -1,7 +1,6 @@
 import { CameraView, CameraType, useCameraPermissions } from 'expo-camera';
-import { styled } from 'nativewind';
 import { ForwardedRef, forwardRef, useEffect, useRef, useState } from 'react';
-import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { View } from 'react-native';
 
 function Camera({}, ref: ForwardedRef<CameraView>,) {
   const [facing, setFacing] = useState<CameraType>('front');

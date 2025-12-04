@@ -1,7 +1,6 @@
 import cx from 'classnames';
-import { styled } from 'nativewind';
 import React, { ReactNode } from 'react';
-import { ScrollView, ScrollViewProps, View } from 'react-native';
+import { ScrollView, ScrollViewProps } from 'react-native';
 
 import SectionEmptyState, { SectionEmptyStateProps } from './empty-states/section-empty-state';
 
